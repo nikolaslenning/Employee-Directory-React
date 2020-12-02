@@ -1,7 +1,8 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
-import Alphabetical from "./pages/Alphabetical"
+import Sort from "./pages/Sort"
 import Home from "./pages/Home"
+import Filter from "./pages/Filter"
 import './App.css';
 
 function App() {
@@ -12,16 +13,17 @@ function App() {
             <a className="nav-link active" href="/">Home</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/alphabetical">Alphabetical</a>
+            <a className="nav-link" href="/sort">Sort</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/job">Job</a>
+            <a className="nav-link" href="/filter">Filter</a>
           </li>
           
         </ul>
         <Switch>
           <Route exact path="/" component ={Home} />
-          <Route exact path="/alphabetical" component ={Alphabetical} />
+          <Route exact path="/sort" component ={Sort} />
+          <Route exact path="/filter" component ={Filter} />
 
         </Switch>
       </BrowserRouter>

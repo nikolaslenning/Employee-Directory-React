@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Home extends React.Component {
+class Sort extends React.Component {
     state = {
       users: []
     };
@@ -34,5 +34,4 @@ class Home extends React.Component {
       );
     }
   };
-
-export default Home;
+export default Sort;
