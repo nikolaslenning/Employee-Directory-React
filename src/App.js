@@ -13,7 +13,7 @@ function App() {
             <a className="nav-link active" href="/">Home</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/sort">Sort</a>
+            <a className="nav-link" href="/sort">Alphabetized</a>
           </li>
           <li className="nav-item">
             <a className="nav-link" href="/filter">Filter</a>
