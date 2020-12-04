@@ -23,8 +23,7 @@ class Home extends React.Component {
     render() {
       return (
         <>
-          <h1>All Employees</h1>
-  
+          <h1>All Employees</h1>  
 
           <table id="employees"className="table">
                     <thead>
@@ -47,8 +46,7 @@ class Home extends React.Component {
                             </tr>
                         ))}
                     </tbody>
-                </table>
-          
+                </table>          
         </>
       );
     }

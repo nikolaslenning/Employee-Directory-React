@@ -1,5 +1,4 @@
 import React from 'react';
-// import NamesContainer from "./NamesContainer"
 
 class Filter extends React.Component {
     state = {
@@ -51,10 +50,9 @@ class Filter extends React.Component {
             )
         })
 
-
         return (
             <div>
-                <h1>Search</h1>
+                <h1>Search Employees</h1>
                 <input
                     placeholder="search employees"
                     type="text"

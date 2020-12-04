@@ -43,23 +43,10 @@ class Sort extends React.Component {
     render() {
         return (
             <>
-                <h1>Alphabetized Employees</h1>
-                <button
-                    onClick={this.reverseAlphabetical}
-                >
-                    Z - A
-        </button>
-                <button
-                    onClick={this.alphabetical}
-                >
-                    A - Z
-        </button>
-                {/* <ul>
-                    {this.state.users.map(user => (
-                        <li key={user.id}>{user.name}</li>
-                    ))}
-                </ul> */}
-
+                <h1>Alphabetize Employees</h1>
+                <button onClick={this.alphabetical}>A - Z</button>
+                <button onClick={this.reverseAlphabetical}>Z - A</button>
+               
                 <table id="employees" className="table">
                     <thead>
                         <tr>
