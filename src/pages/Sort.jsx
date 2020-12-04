@@ -54,11 +54,34 @@ class Sort extends React.Component {
                 >
                     A - Z
         </button>
-                <ul>
+                {/* <ul>
                     {this.state.users.map(user => (
                         <li key={user.id}>{user.name}</li>
                     ))}
-                </ul>
+                </ul> */}
+
+                <table className="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Full Name</th>
+                            <th scope="col">Username</th>
+                            <th scope="col">Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {this.state.users.map(user => (
+                            // <li key={user.id}>{user.name}</li>
+
+                            <tr>
+                                <th scope="row">{user.id}</th>
+                                <td>{user.name}</td>
+                                <td>{user.username}</td>
+                                <td>{user.email}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
             </>
         );
     }
