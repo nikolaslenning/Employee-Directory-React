@@ -60,7 +60,7 @@ class Sort extends React.Component {
                     ))}
                 </ul> */}
 
-                <table className="table">
+                <table id="employees" className="table">
                     <thead>
                         <tr>
                             <th scope="col">ID</th>

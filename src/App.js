@@ -16,7 +16,7 @@ function App() {
             <a className="nav-link" href="/sort">Alphabetized</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/filter">Filter</a>
+            <a className="nav-link" href="/filter">Search</a>
           </li>
           
         </ul>

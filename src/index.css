@@ -1,1 +1,69 @@
+* {
+    box-sizing: border-box;
+}
 
+body {
+    background-color: teal;
+}
+
+button {
+    float: left;
+    margin-top: 50px;
+    margin: 10px auto;
+    display: flex;   
+    justify-content: space-between;
+    background-color: rebeccapurple;
+    
+}
+
+button:hover {
+    background-color: yellow; /* Green */
+    color: black;
+  }
+
+h1 {
+    text-align: center;
+    margin: 10px;
+}
+
+.nav-link {
+    color: black;
+   
+}
+
+.nav-link:hover {
+    /* background-color: yellow;  */
+    color: yellow;
+  }
+
+
+.nav {
+    float: right;
+    margin-top: 50px;
+}
+
+#employees {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#employees td, #employees th {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+#employees tr:nth-child(even) {
+    background-color: grey;
+}
+
+#employees tr:hover {
+    background-color: yellow;
+}
+
+#employees th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rebeccapurple;
+    color: black;
+}

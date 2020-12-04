@@ -36,7 +36,7 @@ class Filter extends React.Component {
                 return (
                     data
                 )
-            } else if (data.name.toLowerCase().includes(this.state.search.toLowerCase())) {
+            } else if (data.name.toLowerCase().includes(this.state.search.toLowerCase()) || data.username.toLowerCase().includes(this.state.search.toLowerCase()) || data.email.toLowerCase().includes(this.state.search.toLowerCase())) {
                 return data
             }
 
@@ -54,11 +54,12 @@ class Filter extends React.Component {
 
         return (
             <div>
-                <h1>Filter Employees</h1>
+                <h1>Search</h1>
                 <input
+                    placeholder="search employees"
                     type="text"
                     onChange={(e) => this.searchSpace(e)} />
-                <table className="table">
+                <table id="employees" className="table">
                     <thead>
                         <tr>
                             <th scope="col">ID</th>
